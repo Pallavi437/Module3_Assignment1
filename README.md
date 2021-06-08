@@ -42,20 +42,15 @@
         <td><button onclick="pushBtn(this);">=</button></td>
     </tr>
 </tbody>
-
-
 <tfoot>
-
 <tr>
     <td colspan="4"><button onclick="pushBtn(this)">Clear</button></td>
 </tr>
-
 </tfoot>
  </table>
  <script>
      var inputLable = document.getElementById('inputLable');
-
-   function pushBtn(obj){
+       function pushBtn(obj){
          var pushed = obj.innerHTML;
          if(pushed=='='){
            inputLable.innerHTML = eval(inputLable.innerHTML);
